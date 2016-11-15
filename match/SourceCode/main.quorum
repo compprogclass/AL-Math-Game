@@ -21,7 +21,7 @@ say computer
     Go= cast(integer,loop) 
 if Go = computer- computer2 
 
-scor= scor+1024
+scor= scor+10
 say " Good job keep going"
 elseif Go > 0 and Go not= 201
 say "you typed in the wrong number try again"
@@ -41,3 +41,6 @@ say "your scor is "+scor
 output scor
     end
 end
+
+//When second number is larger than first, answer is negative. Outputs there was an error or game would end.
+//says second number first
