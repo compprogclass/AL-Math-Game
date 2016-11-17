@@ -15,15 +15,15 @@ computer2 = random:RandomIntegerBetween(1,100)
     computer= random:RandomIntegerBetween(1,100)
 output computer
 output computer2
-say computer2
 say computer
-    loop =input ("wile less then 0  ")
+say computer2
+    loop =input ("wile less then 0 ")
     Go= cast(integer,loop) 
 if Go = computer- computer2 
 
 scor= scor+10
 say " Good job keep going"
-elseif Go > 0 and Go not= 201
+elseif Go > 0 and Go = 201
 say "you typed in the wrong number try again"
 integer answer= computer- computer2
 say  "the right answer is" +answer
@@ -31,7 +31,7 @@ output "the right answer is"+ answer
 scor= scor-5
 elseif Go =201
 say "your scor is"+ scor
-output "your scor iss " + scor
+output "your scor is " + scor
 end
 
 
