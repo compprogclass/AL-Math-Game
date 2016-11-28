@@ -18,8 +18,8 @@ output computer2
 say computer
 say computer2
     loop =input ("wile less then 0 ")
-    Go= cast(integer,loop) 
-if Go = computer- computer2 
+    Go = cast(integer,loop) 
+if Go = computer2- computer 
 
 scor= scor+10
 say " Good job keep going"
