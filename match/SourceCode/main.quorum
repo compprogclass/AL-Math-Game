@@ -2,45 +2,43 @@
 use Libraries.Compute.Random
 class Main
     action Main
-Random random
-number ancer= 0
-integer computer= 0
-integer computer2 = 0
-text loop=""
-integer scor= 0
+        Random random
+        integer ancer= 0
+        integer computer= 0
+        integer computer2 = 0
+        text loop=""
+        integer scor= 0
 
-integer Go = 1
-repeat while Go > 0
-computer2 = random:RandomIntegerBetween(1,100)
-    computer= random:RandomIntegerBetween(1,100)
-output computer
-output computer2
-say computer
-say computer2
-    loop =input ("wile less then 0 ")
-    Go = cast(integer,loop) 
-if Go = computer2- computer 
+        integer go = 1
+        repeat while  go > 0
+            computer2 = random:RandomIntegerBetween(1,100)
+            computer = random:RandomIntegerBetween(1,100)
+            output computer
+            output computer2
+            say computer
+            say computer2
+            loop = input ("wile less then 0 ")
+            go = cast(integer,loop) 
+            correctAnswer = computer - computer2 
+            if  go = correctAnswer
+                scor = scor+10
+                say " Good job keep going"
+            elseif  go > 0 and  go not= 201
+                say "you typed in the wrong number."
+                ancer = computer- computer2
+                say  "the right answer is" + ancer
+                output "the right answer is"+ ancer
+                scor= scor-5
+            elseif  go =201
+                say "your score is"+ scor
+                output "your score is " + scor
+            end
 
-scor= scor+10
-say " Good job keep going"
-elseif Go > 0 and Go = 201
-say "you typed in the wrong number try again"
-integer answer= computer- computer2
-say  "the right answer is" +answer
-output "the right answer is"+ answer
-scor= scor-5
-elseif Go =201
-say "your scor is"+ scor
-output "your scor is " + scor
-end
-
-
-    end
-say "game over"
-say "your scor is "+scor
-output scor
+        end
+        say "game over"
+        say "your scor is "+scor
+        output scor
     end
 end
 
 //When second number is larger than first, answer is negative. Outputs there was an error or game would end.
-//says second number first
